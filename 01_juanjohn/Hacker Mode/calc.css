@@ -1,0 +1,31 @@
+#_1,#_2,#_3,#_4,#_5,#_6,#_7,#_8,#_9,#_0,#add,#subtract,
+#multiply,#divide,#decimal,#compute,#_openb,#_closeb,#_clear,
+#_del,#_caret,#_sin,#_cos,#_tan,#_log,#_pi,#_euler,#_fact
+{
+	cursor:pointer;
+	border-radius:30%;
+	width:50px;
+	border-left-width:3px;
+	border-right-width:3px;
+	margin-left:5px;
+	margin-right:5px;
+	margin-top:2px;
+	margin-bottom:2px;
+}
+#compute{background-color:rgb(150,150,150);}
+#_clear,#_del,#_openb,#_closeb,#_clear,#_del,#_caret,#_sin,#_cos,
+#_tan,#_log,#_pi,#_euler,#_fact{background-color:rgb(200,200,200);}
+#table
+{
+	position:absolute;
+	left:30px;
+	top:120px;
+	background-color:#303030;
+	border-radius:3%;
+	border:1px solid #069ff7;
+	text-align:center;
+	width:275px;
+}
+input:hover{background-color: #dcdcdc;}
+input:active{background-color:#b0c4de;}
+body{background-color:#b0c4de;}

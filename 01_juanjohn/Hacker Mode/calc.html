@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title>Calculator</title>
+<script type="text/javascript" src="calc.js">
+</script>
+<link type="text/css" rel="stylesheet" href="calc.css"/>
+<style type="text/css" rel="stylesheet">
+	#display{
+		background-color:#556B2F;
+		bacground-image:url(screen.png);
+		color:#0b0c1e;
+		text-align:right;
+		padding:4px;
+		width:220px;
+		margin-top:6px;
+		margin-bottom:2px;}
+	#display:hover{background-color:#6E8B3D;}
+</style>
+</head>
+<body>
+<h1 style="text-align:center">Scientific Calculator</h1><hr/><hr/>
+<div class="calculator">
+<p>
+<form action="">
+<table border="1px" id="table"><tr id="_row1"><td>
+<input type="text" name="display" id="display" value="0" onChange="changedisplay()"/><br/><hr/>
+<pre></pre><div>
+<input type="button" id="_openb" value="("  onclick="updatestring('(')"/>
+<input type="button" id="_closeb" value=")" onclick="updatestring(')')"/>
+<input type="button" id="_caret" value="^"  onclick="updatestring('^(')"/>
+<input type="button" id="_del" value="&larr;" onclick="updatestring('del')"/></div>
+<input type="button" id="_euler" value="&#8494"  onclick="updatestring('&#8494')"/>
+<input type="button" id="_pi" value="&#8719" onclick="updatestring('&#8719')"/>
+<input type="button" id="_fact" value="fact" onclick="updatestring('fact(')"/>
+<input type="button" id="_clear" value="CE"  onclick="updatestring('clear')"/><br/>
+<input type="button" id="_sin" value="sin" onclick="updatestring('sin(')"/>
+<input type="button" id="_cos" value="cos" onclick="updatestring('cos(')"/>
+<input type="button" id="_tan" value="tan" onclick="updatestring('tan(')"/>
+<input type="button" id="_log" value="log" onclick="updatestring('log(')"/><br/>
+<input type="button" id="_1" value="1" onclick="updatestring('1')"/>
+<input type="button" id="_2" value="2" onclick="updatestring('2')"/>
+<input type="button" id="_3" value="3" onclick="updatestring('3')"/>
+<input type="button" id="add" value="+" onclick="updatestring('+')"/><br/>
+<input type="button" id="_4" value="4" onclick="updatestring('4')"/>
+<input type="button" id="_5" value="5" onclick="updatestring('5')"/>
+<input type="button" id="_6" value="6" onclick="updatestring('6')"/>
+<input type="button" id="subtract" value="-" onclick="updatestring('-')"/></br/>
+<input type="button" id="_7" value="7" onclick="updatestring('7')"/>
+<input type="button" id="_8" value="8" onclick="updatestring('8')"/>
+<input type="button" id="_9" value="9" onclick="updatestring('9')"/>
+<input type="button" id="multiply" value="*" onclick="updatestring('*')"/><br/>
+<input type="button" id="decimal" value="." onclick="updatestring('.')"/>
+<input type="button" id="_0" value="0" onclick="updatestring('0')"/>
+<input type="button" id="divide" value="/" onclick="updatestring('/')"/>
+<input type="button" id="compute" value="=" onclick="updatestring('=')"/><pre></pre>
+</td></tr></table>
+</form></p></div>
+</body>
+</html>
